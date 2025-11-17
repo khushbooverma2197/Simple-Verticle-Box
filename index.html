@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CTC Box Model Example</title>
+  <style>
+    body {
+      background: #fafafa;
+      font-family: Arial, sans-serif;
+    }
+    .vertical-box {
+      width: 350px;
+      padding: 32px 16px;
+      margin: 40px auto;
+      background: #b1a6f7;
+      border-radius: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 4px 16px rgba(100, 82, 175, 0.13);
+    }
+    .heading {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #323183;
+      margin-bottom: 28px;
+      text-align: center;
+    }
+    .inner-box {
+      background: #fff;
+      border-radius: 14px;
+      padding: 18px;
+      width: 80%;
+      text-align: center;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(100, 82, 175, 0.08);
+    }
+    .inner-box:last-child {
+      margin-bottom: 0;
+    }
+    .big-number {
+      font-size: 2em;
+      font-weight: bold;
+      color: #323183;
+      margin-top: 8px;
+    }
+    .label {
+      font-size: 1.2em;
+      color: #4a4896;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="vertical-box">
+    <div class="heading">Highest &amp; Average CTC</div>
+    <div class="inner-box">
+      <div class="label">Expected Increase in Salary Potential</div>
+      <div class="big-number">60%</div>
+    </div>
+    <div class="inner-box">
+      <div class="label">Average CTC</div>
+      <div class="big-number">₹6.1 LPA</div>
+    </div>
+    <div class="inner-box">
+      <div class="label">Highest CTC</div>
+      <div class="big-number">₹36 LPA</div>
+    </div>
+  </div>
+</body>
+</html>
